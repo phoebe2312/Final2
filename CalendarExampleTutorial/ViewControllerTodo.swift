@@ -27,6 +27,7 @@ class ViewControllerTodo: UIViewController, UITableViewDataSource{
         view.addSubview(table)
         table.dataSource = self
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
+
     }
     
     @objc private func didTapAdd() {
@@ -67,7 +68,7 @@ class ViewControllerTodo: UIViewController, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
         cell.textLabel?.text = items[indexPath.row]
         return cell
