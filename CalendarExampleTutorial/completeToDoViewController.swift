@@ -9,7 +9,6 @@ import UIKit
 
 class completeToDoViewController: UIViewController {
 
-    var previousVC = ViewControllerTodo()
     
     @IBAction func finished(_ sender: Any) {
     }
