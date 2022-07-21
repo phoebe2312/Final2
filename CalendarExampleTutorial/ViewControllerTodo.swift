@@ -62,6 +62,7 @@ class ViewControllerTodo: UIViewController, UITableViewDataSource{
         table.frame = view.bounds
     }
     
+    
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -69,9 +70,19 @@ class ViewControllerTodo: UIViewController, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        tableView.deleteRows(at: [indexPath], with: .fade)
+
         
         cell.textLabel?.text = items[indexPath.row]
+        tableView.deleteRows(at: [indexPath], with: .fade)
         return cell
     }
+ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+  // this gives us a single ToDo
+  let toDo = items[indexPath.row]
+
+  performSegue(withIdentifier: "moveToComplete", sender: toDo)
+}
 
 }
