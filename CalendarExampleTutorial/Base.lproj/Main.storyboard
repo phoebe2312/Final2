@@ -34,7 +34,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="neZ-2i-ami"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.86232134997119492" blue="0.79870387631412898" alpha="0.7110668460132451" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="W0Q-I6-CRz"/>
                 </viewController>
@@ -161,6 +161,7 @@
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mon" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a65-kP-DpK">
                                         <rect key="frame" x="59" y="0.0" width="59.5" height="50"/>
+                                        <color key="backgroundColor" red="1" green="0.85626035199999995" blue="0.77968426420000003" alpha="0.63873654800000002" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -196,13 +197,15 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <color key="backgroundColor" red="1" green="0.86232134999999999" blue="0.79870387629999995" alpha="0.53233650659999998" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="IP3-ko-rmu"/>
                                 </constraints>
                             </stackView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Xxl-GX-PPb">
                                 <rect key="frame" x="0.0" y="179.5" width="414" height="662.5"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" red="1" green="0.85626035199999995" blue="0.77968426420000003" alpha="0.83676531460000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.19713371460000001" green="0.4734805628" blue="0.91398358589999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="2" minimumInteritemSpacing="2" id="iBe-yb-cbf">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -241,7 +244,7 @@
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="1" green="0.86232134999999999" blue="0.79870387629999995" alpha="0.71106684600000003" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="G3T-iL-5do" secondAttribute="leading" id="2ZW-ZZ-PL4"/>
                             <constraint firstItem="G3T-iL-5do" firstAttribute="height" secondItem="nST-AR-Lhg" secondAttribute="height" id="2kQ-jH-0MC"/>
@@ -344,6 +347,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xlj-nn-wHL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="1" green="0.86232134999999999" blue="0.79870387629999995" alpha="0.53233650659999998" colorSpace="custom" customColorSpace="displayP3"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
