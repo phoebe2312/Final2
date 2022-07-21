@@ -7,23 +7,70 @@
 
 import UIKit
 
-class ViewControllerTodo: UIViewController {
+class ViewControllerTodo: UIViewController, UITableViewDataSource{
+
+    
+    
+    private let table: UITableView = {
+        let table = UITableView()
+        table.register(UITableViewCell.self,
+                    forCellReuseIdentifier: "cell")
+        return table
+    }()
+    
+    var items = [String]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.items = UserDefaults.standard.stringArray(forKey: "items") ?? []
+        title = "To Do List"
+        view.addSubview(table)
+        table.dataSource = self
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didTapAdd))
+    }
+    
+    @objc private func didTapAdd() {
+        let alert = UIAlertController(title: "New Item", message: "Enter new list item", preferredStyle: .alert)
+        
+        alert.addTextField { field in
+            field.placeholder = "Enter Item..."
+        }
+        
+        alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: { [weak self] (_) in
+            if let field = alert.textFields?.first {
+                if let text = field.text, !text.isEmpty {
+                    // Enter new item
+                    DispatchQueue.main.async {
+                        var currentItems = UserDefaults.standard.stringArray(forKey: "items") ?? []
+                        currentItems.append(text)
+                        UserDefaults.standard.setValue(currentItems, forKey: "items")
+                        self?.items.append(text)
+                        self?.table.reloadData()
+                    }
+                }
+            }
+            
+        }))
+        
+        present(alert,animated: true)
+    }
+     
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        table.frame = view.bounds
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return items.count
     }
-    */
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        
+        cell.textLabel?.text = items[indexPath.row]
+        return cell
+    }
 
 }
