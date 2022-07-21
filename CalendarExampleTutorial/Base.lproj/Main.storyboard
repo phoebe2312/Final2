@@ -79,7 +79,7 @@
             <objects>
                 <viewController id="4DH-tb-GjW" customClass="ViewControllerHome" customModule="CalendarExampleTutorial" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ui7-cb-owg">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcD-3K-d29">
@@ -341,18 +341,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="scheduleAction:" destination="jhn-1J-Fax" eventType="touchUpInside" id="xf8-8b-HnK"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tr8-Nh-dNf">
-                                <rect key="frame" x="154" y="715" width="111" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Home">
-                                    <fontDescription key="titleFontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="31"/>
-                                    <color key="baseForegroundColor" red="0.93665581809999998" green="0.52599477819999996" blue="0.50749829759999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="4DH-tb-GjW" kind="show" id="eEu-ya-fJC"/>
                                 </connections>
                             </button>
                         </subviews>
