@@ -42,7 +42,7 @@
                                     <fragment>
                                         <string key="content">CalenTree was created by high-schoolers Atina, Aimee, Jolin, and Phoebe during a 2 week Kode With Klossy summer camp. They aimed to create an app that provides help to those who want to better organize their lives and set aside time for themselves. </string>
                                         <attributes>
-                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="NSColor" red="0.70196078431372544" green="0.41568627450980389" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="25" name="Futura-Medium"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -172,6 +172,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lxz-mE-fK1">
                                 <rect key="frame" x="262" y="68" width="152" height="31.5"/>
+                                <color key="tintColor" red="0.70196078429999997" green="0.41568627450000001" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="arrowshape.turn.up.right.circle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="nextMonth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PFr-a8-wWp"/>
@@ -179,6 +180,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3T-iL-5do">
                                 <rect key="frame" x="0.0" y="68" width="152" height="31.5"/>
+                                <color key="tintColor" red="0.70196078429999997" green="0.41568627450000001" blue="0.36862745099999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" image="arrowshape.turn.up.left.circle.fill" catalog="system"/>
                                 <connections>
                                     <action selector="previousMonth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DdQ-5b-YXJ"/>
@@ -337,6 +339,8 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4He-Be-VwG">
                                 <rect key="frame" x="150" y="513" width="115" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.7843137255" green="0.62352941179999999" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.93333333333333335" green="0.88627450980392153" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Schedule">
                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="22"/>
@@ -358,7 +362,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pHm-i4-3pp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-186" y="-446"/>
+            <point key="canvasLocation" x="-739" y="-581"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ts5-vg-QRf">
